@@ -126,7 +126,7 @@ export const FEED = {
     '오늘도 만나서 반가워요. 멍!',
   ],
   saved: '기록 카드가 앨범에 저장됐어요',
-  levelUp: (level: number) => `친밀도가 Lv.${level}이 되었어요`,
+  levelUp: (level: number) => `친밀도가 올랐어요! Lv.${level}`,
   album: '앨범 보기',
   home: '홈으로',
 };

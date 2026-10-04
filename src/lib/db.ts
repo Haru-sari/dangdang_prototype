@@ -75,7 +75,8 @@ function promisify<T>(req: IDBRequest<T>): Promise<T> {
 function txDone(tx: IDBTransaction): Promise<void> {
   return new Promise((resolve, reject) => {
     tx.oncomplete = () => resolve();
-    tx.onerror = () => reject(tx.error);
+    // error 이벤트 시점에는 tx.error가 아직 비어 있을 수 있어 요청의 오류를 씁니다.
+    tx.onerror = (ev) => reject((ev.target as IDBRequest | null)?.error ?? tx.error);
     tx.onabort = () => reject(tx.error);
   });
 }

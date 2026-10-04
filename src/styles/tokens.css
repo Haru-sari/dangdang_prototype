@@ -1,0 +1,33 @@
+/* 디자인 토큰. 큰 글씨·큰 버튼·높은 명암 대비 규칙을 여기서 한 번에 정합니다. */
+:root {
+  /* 색 (본문·버튼 글씨는 배경 대비 4.5:1 이상) */
+  --color-bg: #fff8ee;
+  --color-surface: #ffffff;
+  --color-text: #1f1a16;
+  --color-muted: #574c42;
+  --color-border: #8a7a6b;
+  --color-primary: #a4461a;
+  --color-primary-pressed: #82360f;
+  --color-on-primary: #ffffff;
+  --color-danger: #b3261e;
+  --color-danger-pressed: #8c1d17;
+  --color-notice-bg: #fff1d6;
+  --color-safety-bg: #eef3fb;
+  --color-safety-border: #3e6fb0;
+  --color-focus: #1f5fbf;
+  --color-bubble: #ffffff;
+
+  /* 글씨 */
+  --font-body: 20px;
+  --font-small: 18px;
+  --font-button: 22px;
+  --font-title: 28px;
+  --font-big: 32px;
+  --line-height: 1.55;
+
+  /* 크기 */
+  --button-height: 64px;
+  --radius: 16px;
+  --gap: 16px;
+  --max-width: 480px;
+}
